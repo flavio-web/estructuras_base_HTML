@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bases</title>
+    </head>
+    <body>
+        <h1>ESTRUCTURAS BASICAS HTML</h1>
+
+        <section>
+            <h2>Tablas HTML</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Teléfono 1</th>
+                        <th>Telefono 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>José</td>
+                        <td>Román</td>
+                        <td>jose@gmail.com</td>
+                        <td>0987458741</td>
+                        <td>2987451201</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Maria</td>
+                        <td>León</td>
+                        <td>maria@gmail.com</td>
+                        <td></td>
+                        <td>0978645120</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Marco</td>
+                        <td>Lopez</td>
+                        <td>marcol@gmail.com</td>
+                        <td colspan="2" style="background-color: green; text-align: center">2356478</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Lista</h2>
+            <ul>
+                <li>Nombre: <b>Felipe</b></li>
+                <li>Apellido: <b>Ruiz</b></li>
+                <li>Direccion:</li>
+                <li>
+                    <ul>
+                        <li>Calle Principal: <b>Buenavista</b></li>
+                        <li>Calle secundaria: <b>Rocafuerte</b></li>
+                    </ul>
+                </li>
+                <li>
+                    <button>Grabar</button>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formulario</h2>
+
+            <form>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" minlength="5" maxlength="10" required>
+                </div>
+
+                <div>
+                    <input type="email" id="email" placeholder="Ingresar email" required>
+                </div>
+
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div>
+                    <label for="mayor">¿Eres mayor de edad?</label>
+                    <input type="checkbox" id="mayor" required checked>
+                </div>
+
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" value="18" min="12" max="30" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono">
+                </div>
+
+                <div>
+                    <label for="documento">Documentacion</label>
+                    <select>
+                        <option value="C">Cedula</option>
+                        <option value="P">Pasaporte</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comentario">Comentario</label>
+                    <textarea rows="20" cols="30"></textarea>
+                </div>
+
+                <button type="button">GRABAR</button>
+            </form>
+
+
+        </section>
+    </body>
+</html>
